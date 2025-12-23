@@ -2,7 +2,8 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- VimTeX compile toggle (buffer-local, only for .tex files)
+-- ================================== AutoCMDs =================================
+-- * VimTeX compile toggle (buffer-local, only for .tex files)
 vim.api.nvim_create_autocmd("FileType", {
   pattern = "tex",
   callback = function(ev)
@@ -14,7 +15,7 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 
--- =====REMAPS=====
+-- ================================== Remaps ===================================
 local keymap_remap_opts = { noremap = true, silent = true }
 
 -- * No delete into unnamed registry
@@ -29,6 +30,9 @@ vim.keymap.set("n", "dd", '"_dd', keymap_remap_opts)
 vim.keymap.set("n", "c", '"_c', keymap_remap_opts)
 vim.keymap.set("n", "C", '"_C', keymap_remap_opts)
 vim.keymap.set("n", "cc", '"_cc', keymap_remap_opts)
+
+vim.keymap.set("n", "x", '"_x', keymap_remap_opts)
+vim.keymap.set("n", "X", '"_X', keymap_remap_opts)
 
 -- Also commonly-overlooked delete/replace keys:
 vim.keymap.set("n", "s", '"_s', keymap_remap_opts)
