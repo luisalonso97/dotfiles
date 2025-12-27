@@ -1,0 +1,38 @@
+# If not running interactively, don't do anything (leave this at the top of this file)
+[[ $- != *i* ]] && return
+
+# All the default Omarchy aliases and functions
+# (don't mess with these directly, just overwrite them here!)
+source ~/.local/share/omarchy/default/bash/rc
+
+# Add your own exports, aliases, and functions here.
+#
+# Make an alias for invoking commands you use constantly
+# alias p='python'
+
+alias ll="ls -A"
+alias nvom="nvim"
+alias vi="nvim"
+alias vim="nvim"
+alias crons="sudo -E crontab -e"
+
+export PATH="$HOME/.scripts:$PATH"
+
+# Neede for fcitx japanese iem
+export QT_IM_MODULE=fcitx
+export XMODIFIERS=@im=fcitx
+
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+
+export S3_CHROMIUM_BUCKET="s3://chromium-lalonso.pfiles/"
+export S3_JAPANESE_PREFIX="japanese-notes/"
+
+export NOTES_JAPANESE_S3=$S3_CHROMIUM_BUCKET$S3_JAPANESE_PREFIX
+
+export STOW_DIR="/home/lalonso/.dotfiles"
+
+# Source bash keychain file
+if [ -f ~/.bash_kc ]; then
+    source ~/.bash_kc
+fi
+

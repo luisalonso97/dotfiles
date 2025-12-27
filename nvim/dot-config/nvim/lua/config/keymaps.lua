@@ -14,7 +14,6 @@ vim.api.nvim_create_autocmd("FileType", {
   end,
 })
 
-
 -- ================================== Remaps ===================================
 local keymap_remap_opts = { noremap = true, silent = true }
 
@@ -41,3 +40,13 @@ vim.keymap.set("n", "S", '"_S', keymap_remap_opts)
 -- Visual mode
 vim.keymap.set("x", "d", '"_d', keymap_remap_opts)
 vim.keymap.set("x", "c", '"_c', keymap_remap_opts)
+
+-- * Do \ + r to do a search and replace in visual mode for selection.
+vim.keymap.set("v", "<localleader>r", [["hy:%s/<C-r>h//gc<left><left><left>]], {
+  noremap = true,
+  silent = false,
+  desc = "Substitute selected text (confirm)",
+})
+
+-- * Quickly do jj in insert mode to escape.
+vim.keymap.set("i", "jj", "<ESC>", { silent = true })
