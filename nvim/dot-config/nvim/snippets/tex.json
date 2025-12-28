@@ -1,19 +1,2 @@
-{
-  "kanjicard (4 args + 1 example)": {
-    "prefix": "kanjicard",
-    "description": "kanjicard env",
-    "body": [
-      "\\\\begin{kanjicard}{${1:}}{${2:}}{${3:}}",
-      "  $0",
-      "\\\\end{kanjicard}"
-    ]
-  },
-  "kexample (3 args)": {
-    "prefix": "kexample",
-    "description": "kanjicard example",
-    "body": [
-      "\\\\KExample{${1:}}{${2:}}{${3:}}"
-    ]
-  }
-}
+{ }
 
