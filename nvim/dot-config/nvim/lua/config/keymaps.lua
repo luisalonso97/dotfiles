@@ -50,3 +50,20 @@ vim.keymap.set("v", "<localleader>r", [["hy:%s/<C-r>h//gc<left><left><left>]], {
 
 -- * Quickly do jj in insert mode to escape.
 vim.keymap.set("i", "jj", "<ESC>", { silent = true })
+
+-- * LuaSnip remaps
+local ls = require("luasnip")
+
+-- Cycle forward through choices
+vim.keymap.set({ "i", "s" }, "<C-f>", function()
+  if ls.choice_active() then
+    ls.change_choice(1)
+  end
+end, { desc = "Snippet: Next choice", silent = true })
+
+-- Cycle backward through choices
+vim.keymap.set({ "i", "s" }, "<C-b>", function()
+  if ls.choice_active() then
+    ls.change_choice(-1)
+  end
+end, { desc = "Snippet: Previous choice", silent = true })

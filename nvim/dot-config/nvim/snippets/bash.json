@@ -1,0 +1,10 @@
+{
+  "Strict mode": {
+    "prefix": "smode",
+    "description": "Insert shebang and strict mode instruction",
+    "body": [
+      "#!/usr/bin/env bash",
+      "set -euo pipefail"
+    ]
+  }
+}
