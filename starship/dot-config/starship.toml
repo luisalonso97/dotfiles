@@ -1,0 +1,52 @@
+add_newline = true
+command_timeout = 200
+format = "[$python$username@$hostname$directory$git_branch$git_status](#f3eaeb)$character"
+#format = "[$python$username@$hostname$directory$git_branch$git_status]($style)$character"
+
+[character]
+error_symbol = "[✗](bold #f2c65e)"      # amber reads better than neon-yellow on dark
+success_symbol = "[󰘧](bold #f5df76)"   # gold
+
+[username]
+style_user = "bold #d4534e"            # harmonized brick red
+style_root = "italic #f3eaeb"          # warm white
+format = "[$user]($style)"
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "[$hostname](bold #d4534e) "
+disabled = false
+
+[directory]
+truncation_length = 2
+truncation_symbol = "…/"
+style = "#f3eaeb"                      # warm white for path readability
+repo_root_style = "bold #d4534e"       # brick red for repo root
+repo_root_format = "[$repo_root]($repo_root_style)[$path]($style)[$read_only]($read_only_style) "
+read_only_style = "bold #f2c65e"       # amber lock
+
+[git_branch]
+format = "[$branch]($style) "
+style = "italic #ff7d8a"               # rose = distinct but still warm
+
+[git_status]
+format     = "[$all_status]($style)"
+style      = "#d4534e"                 # brick red for status symbols
+ahead      = "⇡${count} "
+diverged   = "⇕⇡${ahead_count}⇣${behind_count} "
+behind     = "⇣${count} "
+conflicted = " "
+up_to_date = " "
+untracked  = "? "
+modified   = " "
+stashed    = ""
+staged     = ""
+renamed    = ""
+deleted    = ""
+
+[python]
+format = "[$symbol($version)(($virtualenv) )](#9b90ff)"  # lavender block
+pyenv_version_name = true
+
