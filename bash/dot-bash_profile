@@ -1,0 +1,12 @@
+#
+# ~/.bash_profile
+#
+
+[[ -f ~/.bashrc ]] && . ~/.bashrc
+
+export PATH="$HOME/.local/bin:$PATH"
+
+# Source bash keychain file
+if [ -f ~/.bash_kc ]; then
+    source ~/.bash_kc
+fi

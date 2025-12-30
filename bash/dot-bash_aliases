@@ -1,0 +1,18 @@
+# Bash user aliases
+
+# List all
+alias ll="ls -A"
+
+# Neovim aliases and misspellings
+alias nvom="nvim"
+alias vi="nvim"
+alias vim="nvim"
+
+# Access crontab
+alias crons="sudo -E crontab -e"
+
+# Fast lazygit
+alias lg="lazygit"
+
+# stow with --dotfiles by default as $STOW_DIR is already set
+alias stowdf="stow --dotfiles"

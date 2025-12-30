@@ -10,35 +10,23 @@ if [ -f ~/.bash_kc ]; then
     source ~/.bash_kc
 fi
 
-# Add your own exports, aliases, and functions here.
-#
-# Make an alias for invoking commands you use constantly
-# alias p='python'
+# Source bash aliases
+if [ -f ~/.bash_aliases ]; then
+    source ~/.bash_aliases
+fi
 
-alias ll="ls -A"
-alias nvom="nvim"
-alias vi="nvim"
-alias vim="nvim"
-alias crons="sudo -E crontab -e"
-alias lg="lazygit"
+# Source bash variables
+if [ -f ~/.bash_variables ]; then
+    source ~/.bash_variables
+fi
 
+# Add ~/.scripts to path for user scripts
 export PATH="$HOME/.scripts:$PATH"
 
-# Neede for fcitx japanese iem
-export QT_IM_MODULE=fcitx
-export XMODIFIERS=@im=fcitx
-
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-
-export S3_CHROMIUM_BUCKET="s3://chromium-lalonso.pfiles/"
-export S3_JAPANESE_PREFIX="japanese-notes/"
-
-export NOTES_JAPANESE_S3=$S3_CHROMIUM_BUCKET$S3_JAPANESE_PREFIX
-
-export STOW_DIR="/home/lalonso/.dotfiles"
-
+# Less syntax highlight
 export LESSOPEN="| /usr/bin/src-hilite-lesspipe.sh %s"
 export LESS=' -R'
 
+# Haskell sourcing
 [ -f "/home/lalonso/.ghcup/env" ] && . "/home/lalonso/.ghcup/env" # ghcup-env
 
