@@ -33,10 +33,6 @@ vim.keymap.set("n", "cc", '"_cc', keymap_remap_opts)
 vim.keymap.set("n", "x", '"_x', keymap_remap_opts)
 vim.keymap.set("n", "X", '"_X', keymap_remap_opts)
 
--- Also commonly-overlooked delete/replace keys:
-vim.keymap.set("n", "s", '"_s', keymap_remap_opts)
-vim.keymap.set("n", "S", '"_S', keymap_remap_opts)
-
 -- Visual mode
 vim.keymap.set("x", "d", '"_d', keymap_remap_opts)
 vim.keymap.set("x", "c", '"_c', keymap_remap_opts)
