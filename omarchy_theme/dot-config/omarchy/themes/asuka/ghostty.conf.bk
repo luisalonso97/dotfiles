@@ -1,0 +1,41 @@
+# Background and foreground colors
+background = #271517
+foreground = #ffffff
+
+# Standard colors
+#palette = 0=#271517
+#palette = 1=#db4f4d
+#palette = 2=#F8E7CF
+#palette = 3=#E79666
+#palette = 4=#9aa0bc
+#palette = 5=#c2a3c2
+#palette = 6=#b6aec6
+#palette = 7=#FFFFFF
+
+palette = 0=#271517
+palette = 1=#db4f4d
+palette = 2=#F8E7CF
+palette = 3=#E79666
+palette = 4=#9aa0bc
+palette = 5=#9aa0bc
+palette = 6=#db4f4d
+palette = 7=#FFFFFF
+
+# Bright colors
+#palette = 8=#a18084
+#palette = 9=#ee9795
+#palette = 10=#ffffff
+#palette = 11=#f7ccb2
+#palette = 12=#d0d3e1
+#palette = 13=#e7dae7
+#palette = 14=#e6e3ec
+#palette = 15=#ffffff
+
+palette = 8=#a18084
+palette = 9=#ee9795
+palette = 10=#ffffff
+palette = 11=#f7ccb2
+palette = 12=#d0d3e1
+palette = 13=#e7dae7
+palette = 14=#e6e3ec
+palette = 15=#ffffff

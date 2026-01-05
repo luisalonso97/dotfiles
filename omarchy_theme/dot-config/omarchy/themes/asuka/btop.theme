@@ -1,0 +1,71 @@
+# Main background, empty for terminal default, need to be empty if you want transparent background
+theme[main_bg]="#271517"   # DO NOT CHANGE
+
+# Main text color
+theme[main_fg]="#ffffff"
+
+# Title color for boxes (rose/magenta accent)
+theme[title]="#ff7d8a"
+
+# Highlight color for keyboard shortcuts (amber highlight)
+theme[hi_fg]="#f2c65e"
+
+# Background color of selected item in processes box (keep your working bg)
+theme[selected_bg]="#a18084"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#271517"   # better contrast against #a18084 than pure white
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#8b6a70"
+
+# Misc colors for processes box including mini cpu graphs, details memory graph and details status text
+theme[proc_misc]="#9b90ff"     # lavender counterpoint
+
+# Box outline and divider line color
+theme[cpu_box]="#f3eaeb"
+theme[mem_box]="#f3eaeb"
+theme[net_box]="#f3eaeb"
+theme[proc_box]="#f3eaeb"
+theme[div_line]="#8b6a70"
+
+# Gradient for all meters and graphs
+# Temperature: cool -> warm
+theme[temp_start]="#9aa0bc"
+theme[temp_mid]="#9b90ff"
+theme[temp_end]="#ff7d8a"
+
+# CPU: cool -> gold
+theme[cpu_start]="#9aa0bc"
+theme[cpu_mid]="#f2c65e"
+theme[cpu_end]="#f5df76"
+
+# Free: lavender -> amber -> gold (pleasant, readable “available” ramp)
+theme[free_start]="#9b90ff"
+theme[free_mid]="#f2c65e"
+theme[free_end]="#f5df76"
+
+# Cached: rose -> brick -> rose (keeps it warm and distinct)
+theme[cached_start]="#ff7d8a"
+theme[cached_mid]="#d4534e"
+theme[cached_end]="#ff7d8a"
+
+# Available: cool neutral -> lavender -> warm white
+theme[available_start]="#9aa0bc"
+theme[available_mid]="#9b90ff"
+theme[available_end]="#f3eaeb"
+
+# Used: amber -> brick (feels “hotter” as it fills)
+theme[used_start]="#f2c65e"
+theme[used_mid]="#d4534e"
+theme[used_end]="#d4534e"
+
+# Download/Upload: warm -> cool (motion feel)
+theme[download_start]="#f5df76"
+theme[download_mid]="#9b90ff"
+theme[download_end]="#9aa0bc"
+
+theme[upload_start]="#f2c65e"
+theme[upload_mid]="#9b90ff"
+theme[upload_end]="#9aa0bc"
+
