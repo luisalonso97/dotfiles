@@ -6,9 +6,9 @@
 	ci = commit
 	st = status
 [init]
-	defaultBranch = master
+	defaultBranch = main
 [pull]
-	rebase = true 			 # Rebase (instead of merge) on pull
+	rebase = true
 [push]
 	autoSetupRemote = true   # Automatically set upstream branch on push
 [diff]
@@ -30,5 +30,8 @@
   compression = 9
   whitespace = true
   preloadindex = true
+# Private file to store user info.
 [include]
     path = ~/.config/git/private.gitconfig
+[url "ssh://forgejo@ssh.lalonso.com/luis_alonso/"]
+  insteadOf = "forgejo/"
