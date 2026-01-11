@@ -1,10 +1,9 @@
--- More harmonized warm palette (keeps the red/yellow feel)
-local LITERAL_LAVENDER = "#9b90ff" -- was #8e82fe, nudged slightly toward the same “family”
-local FUNCTION_GOLD    = "#f5df76" -- was #fdfd96 (less pastel/neon, more “gold”)
-local STRING_ROSE      = "#ff7d8a" -- was #F8858B (slightly cleaner / more consistent)
-local KEYWORD_BRICK    = "#d4534e" -- was #db4f4d (tiny shift to reduce harshness)
-local BUILTIN_AMBER    = "#f2c65e" -- was #ffdb58 (less “highlighter”, more amber)
-local BUILTIN_ORANGE   = "#f09a49" -- replaces #E54C38 (this is now truly a warm orange accent)
+local LITERAL_LAVENDER = "#9b90ff"
+local FUNCTION_GOLD    = "#f5df76"
+local STRING_ROSE      = "#ff7d8a"
+local KEYWORD_BRICK    = "#d4534e"
+local BUILTIN_AMBER    = "#f2c65e"
+local BUILTIN_ORANGE   = "#f09a49"
 
 return {
   {
@@ -20,7 +19,7 @@ return {
         base02 = "#271517", -- Selection background
         base03 = "#a18084", -- Comments, invisibles
         base04 = "#FFFFFF", -- Dark foreground
-        base05 = "#ffffff", -- Default foreground
+        base05 = "#ffffff", -- Default foreground, normal text
         base06 = "#ffffff", -- Light foreground
         base07 = "#FFFFFF", -- Light background
 
