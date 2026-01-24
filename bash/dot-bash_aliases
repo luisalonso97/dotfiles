@@ -16,3 +16,13 @@ alias lg="lazygit"
 
 # stow with --dotfiles by default as $STOW_DIR is already set
 alias stowdf="stow --dotfiles"
+
+# From https://github.com/nirabyte/waybar-timer
+alias timer="~/.config/waybar/scripts/timer.sh"
+alias pomo="~/.config/waybar/scripts/timer.sh pomo"
+
+# VeraCrypt external ssd mount/umount
+
+export EXT_NVME="/dev/disk/by-id/usb-_RTL9210C_012345678934-0:0-part1"
+alias vsafe_mount_ext_nvme="sudo veracrypt --text --mount $EXT_NVME /mnt/secure --fs-options=uid=1000,gid=1000,umask=022,x-gvfs-show"
+alias vsafe_umount="sudo veracrypt --text --unmount /mnt/secure"
