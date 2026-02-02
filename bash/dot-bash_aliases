@@ -9,7 +9,7 @@ alias vi="nvim"
 alias vim="nvim"
 
 # Access crontab
-alias crons="sudo -E crontab -e"
+alias crons="crontab -e"
 
 # Fast lazygit
 alias lg="lazygit"
